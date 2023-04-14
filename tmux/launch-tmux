@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+CUSTOM_SOCKET="loctx"
+CUSTOM_CONFIG="/home/ubuntu/loctx/.tmux.conf"
+DEFAULT_SESSIon="loctx"
+
+tmux -L $CUSTOM_SOCKET -f $CUSTOM_CONFIG attach \
+    || tmux -L $CUSTOM_SOCKET -f $CUSTOM_CONFIG new -s $DEFAULT_SESSIon
