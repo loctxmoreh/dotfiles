@@ -1,9 +1,12 @@
 [user]
-	email = tranxuanloc19920@gmail.com
+	email = loc.tran@moreh.com.vn
 	name = Tran Xuan Loc
 [init]
 	defaultBranch = main
 [core]
 	editor = nvim
+	sshCommand = ssh -i ~/.ssh/github_id_rsa
+[pull]
+	rebase = true
 [alias]
 	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
